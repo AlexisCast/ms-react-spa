@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { loginRequest } from './authConfig';
 import { callMsGraph } from './graph';
 import { ProfileData } from './components/ProfileData';
+import { OneDriveForms } from './components/OneDriveForms';
 
 
 /**
@@ -49,6 +50,7 @@ const MainContent = () => {
         <div className="App">
             <AuthenticatedTemplate>
                 <ProfileContent />
+                <OneDriveForms/>
             </AuthenticatedTemplate>
 
             <UnauthenticatedTemplate>
